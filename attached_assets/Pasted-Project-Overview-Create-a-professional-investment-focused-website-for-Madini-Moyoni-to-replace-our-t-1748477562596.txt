@@ -1,0 +1,119 @@
+Project Overview
+Create a professional investment-focused website for Madini Moyoni to replace our temporary site (www.madinimoyoni.co.uk). The existing website did not have a premium feel or gloss needed for such an important proposal and it did not explain bothbtiers of investment or position itself to attract UK bassed investors. The new website should be designed specifically to attract investors, build trust in our brand, and showcase the unique value proposition of our mining investment opportunity in Tanzania.
+
+We have both a strategic investment proposal and an SEIS proposal.  This website should incorporate the entire project but be geared towards SEIS investors as that's who we aim to attract. 
+This website is to give our UK audience the chance to take part and take advantage of the SEIS Seed funding raise.
+A strategic raise is taking place concurrently with our US based audience where the opportunity is building rapid traction and being handled by 
+https://www.tielasater.com/ and https://www.linkedin.com/company/globalcapitalista/ during the month of June and July. This gives the website a sense of FOMO and encourages quick engagement. 
+
+ There should be a CTA and section for UK strategic investment included. How the the core function is to attract UK investors keen on social economic change that gives an excellent return. Investors keen on a transparent and sustainabile approach .
+
+Key Objectives
+1. Present our investment proposal in a clear, compelling manner
+2. Establish credibility and professionalism for potential investors
+3. Showcase our unique value proposition in the mining sector
+4. Provide easy access to essential documentation and financials
+5. Facilitate investor engagement and inquiries
+
+Essential Content Elements
+- Hero Section: Striking visual introduction with tagline emphasizing our unique investment opportunity
+- About Us: Company history, mission, vision, and what makes Madini Moyoni different
+- Investment Opportunity: Clear breakdown of the investment proposition, with emphasis on ROI potential and timeline
+- Company Video: Embedded video from https://youtu.be/CTn3kkD128w?feature=shared
+- SEIS Calculator: Interactive tool for investors to calculate tax benefits under the Seed Enterprise Investment Scheme. This should be user friendly in sterling currency 
+- Project Timeline: show an attractive infographic of the key milestone. This should only be interwoven into the appropriate section 
+- Financial Information: Professional presentation of the financial data in proposal
+- Risk & Mitigation: Visual representation of the risk assessment and mitigation strategies 
+- Team: Professional biographies with consistent formatting and information on the advisors. Team should in a tab format soyoucan click between teams and save space (information on the team and it's advisors is on existing website)
+-FAQ: Addressing common investor questions
+- Contact Page: Clear channels for investor inquiries
+
+
+Design Requirements
+- Color Scheme: Use brown, copper, green and cream. We require a premium website. 
+- Typography: Modern, clean fonts appropriate for financial/investment sector
+- Mobile Responsive: Fully functional on all device sizes
+- Loading Speed: Optimize for quick loading, especially of financial charts and documents
+- User Experience: Clear navigation focused on investor journey
+- Visual Hierarchy: Emphasize key investment highlights and calls to action
+
+Technical Features
+- Interactive SEIS calculator (tax relief estimation tool)
+
+- Contact form with appropriate categorization for inquiries
+- Analytics integration for tracking investor engagement
+- Mobile optimization
+- SEO implementation with focus on investment-related keywords
+
+Brand Assets Provided to be provided 
+- Company logo jpeg
+- Investment proposal document
+- Risk and mitigation chart 
+- Financial information (
+- Company video (URL: https://youtu.be/CTn3kkD128w?feature=shared)
+- Team photos (can be sourced from existing website)Project Overview
+Create a professional investment-focused website for Madini Moyoni to replace our temporary site (www.madinimoyoni.co.uk). The existing website did not have a premium feel or gloss needed for such an important proposal and it did not explain bothbtiers of investment or position itself to attract UK bassed investors. The new website should be designed specifically to attract investors, build trust in our brand, and showcase the unique value proposition of our mining investment opportunity in Tanzania. 
+
+We have both a strategic investment proposal and an SEIS proposal.  This website should incorporate the entire project but be geared towards SEIS investors as that's who we aim to attract. 
+This website is to give our UK audience the chance to take part and take advantage of the SEIS Seed funding raise.
+A strategic raise is taking place concurrently with our US based audience where the opportunity is building rapid traction and being handled by 
+https://www.tielasater.com/ and https://www.linkedin.com/company/globalcapitalista/ during the month of June and July. This gives the website a sense of FOMO and encourages quick engagement. 
+
+There should be a CTA and section for UK strategic investment included. How the the core function is to attract UK investors keen on social economic change that gives an excellent return. Investors keen on a transparent and sustainabile approach . 
+
+Key Objectives
+1. Present our investment proposal in a clear, compelling manner
+2. Establish credibility and professionalism for potential investors
+3. Showcase our unique value proposition in the mining sector
+4. Provide easy access to essential documentation and financials
+5. Facilitate investor engagement and inquiries 
+
+Essential Content Elements
+- Hero Section: Striking visual introduction with tagline emphasizing our unique investment opportunity
+- About Us: Company history, mission, vision, and what makes Madini Moyoni different
+- Investment Opportunity: Clear breakdown of the investment proposition, with emphasis on ROI potential and timeline
+- Company Video: Embedded video from https://youtu.be/CTn3kkD128w?feature=shared
+- SEIS Calculator: Interactive tool for investors to calculate tax benefits under the Seed Enterprise Investment Scheme. This should be user friendly in sterling currency 
+- Project Timeline: show an attractive infographic of the key milestone. This should only be interwoven into the appropriate section 
+- Financial Information: Professional presentation of the financial data in proposal
+- Risk & Mitigation: Visual representation of the risk assessment and mitigation strategies 
+- Team: Professional biographies with consistent formatting and information on the advisors. Team should in a tab format soyoucan click between teams and save space (information on the team and it's advisors is on existing website)
+-FAQ: Addressing common investor questions
+- Contact Page: Clear channels for investor inquiries
+
+
+Design Requirements
+- Color Scheme: Use brown, copper, green and cream. We require a premium website. 
+- Typography: Modern, clean fonts appropriate for financial/investment sector
+- Mobile Responsive: Fully functional on all device sizes
+- Loading Speed: Optimize for quick loading, especially of financial charts and documents
+- User Experience: Clear navigation focused on investor journey
+- Visual Hierarchy: Emphasize key investment highlights and calls to action 
+
+Technical Features
+- Interactive SEIS calculator (tax relief estimation tool) 
+
+- Contact form with appropriate categorization for inquiries
+- Analytics integration for tracking investor engagement
+- Mobile optimization
+- SEO implementation with focus on investment-related keywords 
+
+
+
+Timeline and Deliverables
+- Initial design mockup
+- Functional website with all requested features
+- Mobile-responsive version
+- Documentation for future site maintenance 
+
+Please ensure all team member biographies and contact information are updated from the information provided in the proposal, not just copied from the old site. The site should present a significant upgrade in professionalism and clarity compared to our temporary website.
+-Social project pegged
+Mbesa cooper
+
+Timeline and Deliverables
+- Initial design mockup
+- Functional website with all requested features
+- Mobile-responsive version
+- Documentation for future site maintenance
+
+Please ensure all team member biographies and contact information are updated from the information provided in the proposal, not just copied from the old site. The site should present a significant upgrade in professionalism and clarity compared to our temporary website.
