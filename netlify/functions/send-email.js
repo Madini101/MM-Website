@@ -5,38 +5,59 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 const sgMail = require('@sendgrid/mail');\
+\f0\fs24 \cf0 <form id="contactForm">\
+  <label for="name">Full Name</label>\
+  <input type="text" id="name" name="name" required />\
 \
-exports.handler = async (event) => \{\
-  if (event.httpMethod !== 'POST') \{\
-    return \{\
-      statusCode: 405,\
-      body: 'Method Not Allowed',\
+  <label for="email">Email Address</label>\
+  <input type="email" id="email" name="email" required />\
+\
+  <label for="investmentType">Type of Investment</label>\
+  <select id="investmentType" name="investmentType" required>\
+    <option value="SESI">SESI</option>\
+    <option value="General">General</option>\
+    <option value="Strategic">Strategic</option>\
+  </select>\
+\
+  <label for="message">Message</label>\
+  <textarea id="message" name="message" rows="5" required></textarea>\
+\
+  <button type="submit">Submit</button>\
+</form>\
+\
+<script>\
+  const form = document.getElementById('contactForm');\
+\
+  form.addEventListener('submit', async (e) => \{\
+    e.preventDefault();\
+\
+    const formData = \{\
+      name: form.name.value,\
+      email: form.email.value,\
+      investmentType: form.investmentType.value,\
+      message: form.message.value,\
     \};\
-  \}\
 \
-  const \{ name, email, message \} = JSON.parse(event.body);\
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);\
+    try \{\
+      const res = await fetch('/.netlify/functions/send-email', \{\
+        method: 'POST',\
+        headers: \{\
+          'Content-Type': 'application/json',\
+        \},\
+        body: JSON.stringify(formData),\
+      \});\
 \
-  const msg = \{\
-    to: 'info@madinimoyoni.co.uk, \
-    from: \'91info@madinimoyoni.co.uk,\
-    subject: `New Investment Inquiry from $\{contactData.investmentType\}`,\
-    text: \'91Thank you for your interest! We will contact you within 24 hours to discuss your investment.\'92,,\
-    html: `<p><strong>Email:</strong> $\{email\}</p><p>$\{message\}</p>`,\
-  \};\
-\
-  try \{\
-    await sgMail.send(msg);\
-    return \{\
-      statusCode: 200,\
-      body: JSON.stringify(\{ message: 'Message sent successfully' \}),\
-    \};\
-  \} catch (err) \{\
-    return \{\
-      statusCode: err.code || 500,\
-      body: JSON.stringify(\{ error: err.message \}),\
-    \};\
-  \}\
-\};\
+      const result = await res.json();\
+      if (res.ok) \{\
+        alert('Thank you! Your message has been sent.');\
+        form.reset();\
+      \} else \{\
+        alert(`Error: $\{result.error || 'Failed to send message'\}`);\
+      \}\
+    \} catch (err) \{\
+      alert('An unexpected error occurred.');\
+      console.error(err);\
+    \}\
+  \});\
+</script>\
 }
