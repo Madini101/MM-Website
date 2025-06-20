@@ -168,9 +168,9 @@ export default function Financials() {
                     
                     <div className="space-y-4">
                       <div className="text-center">
-                        <div className="text-3xl font-bold">£5,000 - £50,000</div>
+                        <div className="text-3xl font-bold">£5,000 - £200,000</div>
                         <p className="text-sm opacity-90">Per individual investor</p>
-                        <p className="text-xs opacity-75">Above £50,000: Tailored approach</p>
+                        <p className="text-xs opacity-75">Above £200,000: Tailored approach</p>
                       </div>
                       
                       <div className="bg-white bg-opacity-10 p-4 rounded">

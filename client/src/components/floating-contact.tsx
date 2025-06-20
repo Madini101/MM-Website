@@ -14,7 +14,7 @@ export default function FloatingContact() {
   };
 
   return (
-    <div className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 z-50">
+    <div className="fixed bottom-24 sm:bottom-6 right-4 sm:right-6 z-40">
       {isOpen && (
         <div className="mb-4 bg-white dark:bg-trust-navy border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-3 sm:p-4 w-56 sm:w-64">
           <div className="flex justify-between items-center mb-3">

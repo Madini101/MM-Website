@@ -17,6 +17,7 @@ import carsueCurniffePhoto from "@assets/Carsue Curniffe.png";
 import asamoahMfoafoPhoto from "@assets/Asamoah Mfoafo.png";
 import adrianMailePhoto from "@assets/Adrian Maile.png";
 import annaTibaijukaPhoto from "@assets/Anna Tibaijuka.png";
+import amaniBlasSalekoPhoto from "@assets/Amani Blass Saleko_1750442211755.png";
 
 export default function Team() {
   const [activeTab, setActiveTab] = useState("madini");
@@ -88,7 +89,7 @@ export default function Team() {
     {
       name: "Amani Blass Saleko",
       position: "Head of Mine Site",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+      image: amaniBlasSalekoPhoto,
       description: "Head of mining site who oversees production of copper, health and safety and quality assurance processes. Managed number of mining sites across Tanzania. Lifelong ndugu (brethren) of Mshana family from Kilimanjaro region. Owns hotel in hometown of Moshi and community activist who built school facilities for local children."
     }
   ];

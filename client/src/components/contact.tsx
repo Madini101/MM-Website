@@ -53,7 +53,7 @@ export default function Contact() {
     },
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!formData.fullName || !formData.email || !formData.investmentType) {
@@ -74,7 +74,46 @@ export default function Contact() {
       message: formData.message || null,
     };
 
-    contactMutation.mutate(submitData);
+    // Use Netlify function for deployment
+    const isNetlify = import.meta.env.PROD;
+    const endpoint = isNetlify ? '/.netlify/functions/contact' : '/api/contacts';
+    
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(submitData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
+      }
+
+      const result = await response.json();
+      
+      toast({
+        title: "Message Sent Successfully",
+        description: result.message || "Thank you for your interest. We will contact you within 24 hours.",
+      });
+
+      // Reset form
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        investmentType: "",
+        investmentAmount: "",
+        message: ""
+      });
+    } catch (error: any) {
+      toast({
+        title: "Error",
+        description: error.message || "Failed to submit contact form. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -146,7 +185,7 @@ export default function Contact() {
                       <SelectValue placeholder="Choose your investment interest" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="seis">SEIS Investment (£5,000 - £100,000)</SelectItem>
+                      <SelectItem value="seis">SEIS Investment (£5,000 - £200,000)</SelectItem>
                       <SelectItem value="strategic">Strategic Investment ($100,000+)</SelectItem>
                       <SelectItem value="general">General Information</SelectItem>
                     </SelectContent>

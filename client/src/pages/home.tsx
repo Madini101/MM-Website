@@ -14,6 +14,7 @@ import FloatingContact from "@/components/floating-contact";
 import ProgressIndicator from "@/components/progress-indicator";
 import SectionDivider from "@/components/section-divider";
 import BackToTop from "@/components/back-to-top";
+import MobileSectionNav from "@/components/mobile-section-nav";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <ProgressIndicator />
       <FloatingContact />
       <BackToTop />
+      <MobileSectionNav />
       
       <main id="main-content" className="golden-flow overflow-x-hidden">
         {/* Hero - First Impression & Trust Building */}

@@ -35,9 +35,9 @@ export default function InvestmentHighlights() {
             <CardContent className="p-4 sm:p-6 lg:p-8">
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-earth-gold mb-4 sm:mb-6">SEIS Investment Benefits</h3>
               <div className="text-center mb-4 sm:mb-6">
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">£5,000 - £50,000</div>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">£5,000 - £200,000</div>
                 <p className="text-sm sm:text-base text-gray-300 font-medium">Per Individual Investor</p>
-                <p className="text-xs text-gray-400 mt-1">Above £50,000: Contact for tailored approach</p>
+                <p className="text-xs text-gray-400 mt-1">Above £200,000: Contact for tailored approach</p>
               </div>
               
               <div className="space-y-4">

@@ -44,7 +44,7 @@ export default function Investment() {
   const investmentPaths = [
     {
       type: "SEIS Individual",
-      range: "£5,000 - £50,000",
+      range: "£5,000 - £200,000",
       highlight: "50% Tax Relief",
       benefits: [
         "Immediate 50% HMRC tax relief",
@@ -141,7 +141,7 @@ export default function Investment() {
                   <span className="text-earth-gold font-bold text-xl">£</span>
                 </div>
                 <h4 className="text-xl sm:text-2xl font-bold text-trust-navy mb-3 group-hover:text-earth-gold transition-colors">SEIS Individual Investment</h4>
-                <div className="text-2xl sm:text-3xl font-bold text-trust-navy mb-3">£5,000 - £50,000</div>
+                <div className="text-2xl sm:text-3xl font-bold text-trust-navy mb-3">£5,000 - £200,000</div>
                 <p className="text-sm sm:text-base text-gray-600 bg-earth-gold/10 px-4 py-2 rounded-full">UK tax-efficient investment pathway</p>
               </div>
               
