@@ -128,7 +128,7 @@ export default function About() {
                       </div>
                       <div>
                         <h4 className="font-bold text-lg mb-1 text-white">Transparent Operations</h4>
-                        <p className="text-sm text-gray-300">Full UK regulatory compliance, HMRC SEIS assurance and authentic partnership values</p>
+                        <p className="text-sm text-gray-300">Full regulatory compliance, transparent operations and authentic partnership values</p>
                       </div>
                     </div>
                   </div>
@@ -153,8 +153,7 @@ export default function About() {
                   
                   <div className="mt-6 pt-6 border-t border-gray-600">
                     <p className="text-sm italic text-center text-gray-300">
-                      "We don't just extract copper - we extract potential from communities, 
-                      partnerships, and sustainable practices that benefit everyone."
+                      "Our mission is to establish sustainable copper mining operations that create lasting value for local communities through professional practices and genuine partnerships."
                     </p>
                   </div>
                 </div>
@@ -169,9 +168,16 @@ export default function About() {
                 <Button
                   onClick={() => {
                     const element = document.getElementById('contact');
-                    if (element) element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    } else {
+                      window.location.href = '/contact';
+                      setTimeout(() => {
+                        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+                      }, 100);
+                    }
                   }}
-                  className="bg-earth-gold border-2 border-earth-gold text-trust-navy hover:bg-yellow-500 font-bold py-3 px-8 text-lg shadow-md"
+                  className="bg-earth-gold border-2 border-earth-gold text-trust-navy hover:bg-yellow-500 font-bold py-3 px-6 sm:px-8 text-sm sm:text-lg shadow-md w-full sm:w-auto max-w-xs touch-manipulation min-h-[48px]"
                 >
                   Join Our Mission
                 </Button>
