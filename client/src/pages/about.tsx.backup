@@ -1,0 +1,636 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { Target, Lightbulb, MapPin, Users, TrendingUp, Globe, Building, Pickaxe, Youtube, Linkedin, Instagram, ChevronDown, DollarSign, ArrowRight, Zap } from "lucide-react";
+
+export default function About() {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1559774945-138787f3a94e?fm=jpg&q=80&w=2000&ixlib=rb-4.1.0"
+            alt="Professional copper mining operations"
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-trust-navy/80 to-blue-800/80"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="text-white">
+                <div className="mb-6">
+                  <span className="inline-block bg-earth-gold text-trust-navy px-4 py-2 rounded-full font-bold text-sm mb-4">
+                    UK-Tanzania Joint Venture
+                  </span>
+                  <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Transforming 
+                    <span className="text-earth-gold"> African Mining</span>
+                  </h1>
+                </div>
+                
+                <p className="text-xl text-gray-100 leading-relaxed mb-8">
+                  Our mining project gives artisanal miners on the copper belt in rural Africa the opportunity to better themselves, their families and their communities by mechanising and up-scaling their operations.
+                </p>
+                
+                <div className="grid grid-cols-2 gap-6 mb-8">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-earth-gold/30">
+                    <div className="text-3xl font-bold text-earth-gold mb-1">2 Years</div>
+                    <div className="text-sm text-gray-200">Partnership Development</div>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-earth-gold/30">
+                    <div className="text-3xl font-bold text-earth-gold mb-1">9.9x</div>
+                    <div className="text-sm text-gray-200">Target ROI Over 5 Years</div>
+                  </div>
+                </div>
+                
+                {/* Social Media Links */}
+                <div className="flex space-x-4">
+                  <a href="https://linkedin.com/company/madini-moyoni" target="_blank" rel="noopener noreferrer" 
+                     className="flex items-center space-x-2 bg-earth-gold text-trust-navy hover:bg-amber-500 px-4 py-2 rounded-lg transition-all font-semibold">
+                    <Linkedin className="h-4 w-4" />
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="https://youtube.com/@madini-moyoni" target="_blank" rel="noopener noreferrer"
+                     className="flex items-center space-x-2 bg-white/10 border border-white/30 text-white hover:bg-white/20 px-4 py-2 rounded-lg transition-all">
+                    <Youtube className="h-4 w-4" />
+                    <span>YouTube</span>
+                  </a>
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-4">
+                  <div className="bg-white/15 backdrop-blur-sm rounded-lg p-6 border border-earth-gold/20">
+                    <MapPin className="h-8 w-8 text-earth-gold mb-3" />
+                    <h3 className="text-white font-bold mb-2">Location</h3>
+                    <p className="text-gray-200 text-sm">Mbesa, Tanzania - Abundant copper resources</p>
+                  </div>
+                  <div className="bg-white/15 backdrop-blur-sm rounded-lg p-6 border border-earth-gold/20">
+                    <Users className="h-8 w-8 text-earth-gold mb-3" />
+                    <h3 className="text-white font-bold mb-2">Community</h3>
+                    <p className="text-gray-200 text-sm">Transforming local mining community</p>
+                  </div>
+                </div>
+                <div className="space-y-4 mt-8">
+                  <div className="bg-white/15 backdrop-blur-sm rounded-lg p-6 border border-earth-gold/20">
+                    <TrendingUp className="h-8 w-8 text-earth-gold mb-3" />
+                    <h3 className="text-white font-bold mb-2">Returns</h3>
+                    <p className="text-gray-200 text-sm">64% annual IRR target</p>
+                  </div>
+                  <div className="bg-white/15 backdrop-blur-sm rounded-lg p-6 border border-earth-gold/20">
+                    <Building className="h-8 w-8 text-earth-gold mb-3" />
+                    <h3 className="text-white font-bold mb-2">Processing</h3>
+                    <p className="text-gray-200 text-sm">Copper cathode production planned</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+          <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white rounded-full mt-2"></div>
+          </div>
+        </div>
+      </section>
+
+      <div className="container mx-auto px-4 py-12">
+        <div className="max-w-6xl mx-auto space-y-20">
+          
+          {/* Mission & Impact Statistics */}
+          <section className="py-20 bg-trust-navy text-white relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-trust-navy to-blue-800"></div>
+            
+            <div className="container mx-auto px-4 relative z-10">
+              <div className="max-w-6xl mx-auto">
+                <div className="text-center mb-16">
+                  <span className="inline-block bg-earth-gold text-trust-navy px-4 py-2 rounded-full font-bold text-sm mb-4">
+                    Our Mission
+                  </span>
+                  <h2 className="text-4xl md:text-5xl font-bold mb-8">
+                    Sustainable Impact Through Innovation
+                  </h2>
+                  <p className="text-xl text-gray-100 max-w-4xl mx-auto leading-relaxed">
+                    We want to do this sustainably and safely, whilst preserving and enhancing the environment. We will elevate the local population and impact them positively in social, economic and ecological terms.
+                  </p>
+                </div>
+                
+                {/* Impact Statistics */}
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+                  <div className="text-center">
+                    <div className="text-4xl md:text-5xl font-bold text-earth-gold mb-2">$22.9M</div>
+                    <div className="text-gray-200">Year 5 Revenue Target</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl md:text-5xl font-bold text-earth-gold mb-2">$4.1M</div>
+                    <div className="text-gray-200">Year 1 Revenue Target</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl md:text-5xl font-bold text-earth-gold mb-2">458%</div>
+                    <div className="text-gray-200">Revenue Growth Over 5 Years</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl md:text-5xl font-bold text-earth-gold mb-2">6 Months</div>
+                    <div className="text-gray-200">To Processing Plant Construction</div>
+                  </div>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-earth-gold/20">
+                  <p className="text-xl text-center leading-relaxed">
+                    <span className="text-earth-gold font-semibold">What makes our approach special</span> is that at the same time as providing exceptional benefits to the workers and their community, we will run a successful, growing and profitable business for generations to come.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Key Capabilities */}
+          <section>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <Card className="text-center">
+                <CardContent className="p-6">
+                  <Pickaxe className="h-12 w-12 text-earth-gold mx-auto mb-4" />
+                  <h3 className="text-xl font-bold text-trust-navy mb-2">Modern Mining</h3>
+                  <p className="text-trust-navy font-medium">High-quality machinery and infrastructure ensuring efficient, safe operations</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center">
+                <CardContent className="p-6">
+                  <Building className="h-12 w-12 text-earth-gold mx-auto mb-4" />
+                  <h3 className="text-xl font-bold text-trust-navy mb-2">Processing Plant</h3>
+                  <p className="text-trust-navy font-medium">Copper concentration plant for higher returns and value-added processing</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center">
+                <CardContent className="p-6">
+                  <Users className="h-12 w-12 text-earth-gold mx-auto mb-4" />
+                  <h3 className="text-xl font-bold text-trust-navy mb-2">Community Impact</h3>
+                  <p className="text-trust-navy font-medium">Creating lasting positive change through sustainable mining practices</p>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+
+          {/* Our Approach */}
+          <section className="bg-white rounded-lg p-8 shadow-sm">
+            <h2 className="text-3xl font-bold text-trust-navy mb-8 text-center">Our Strategic Approach</h2>
+            
+            {/* Equipment Visual - Centered */}
+            <div className="mb-8">
+              <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1559774944-4e6c033af2fb?fm=jpg&q=80&w=2000&ixlib=rb-4.1.0"
+                  alt="Mining equipment and operations"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-trust-navy/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 bg-earth-gold/95 text-trust-navy px-4 py-2 rounded font-semibold">
+                  Professional Mining Equipment & Operations
+                </div>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-2xl font-bold text-trust-navy mb-4 flex items-center">
+                  <Target className="h-6 w-6 text-earth-gold mr-3" />
+                  Operational Excellence
+                </h3>
+                <div className="space-y-4 text-trust-navy">
+                  <p className="font-medium leading-relaxed">
+                    Once the machinery is purchased and the mining operation set up, it is a relatively simple task for the mining team to dig, crush and concentrate the copper ore, and send it to customers that are already contracted with us.
+                  </p>
+                  <p className="font-medium leading-relaxed">
+                    Within six months we will begin building a copper-concentration plant to concentrate the ore into copper cathodes, which give us higher returns and we will follow this with extraction of other high-value metals such as gold and silver.
+                  </p>
+                </div>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-bold text-trust-navy mb-4 flex items-center">
+                  <Globe className="h-6 w-6 text-earth-gold mr-3" />
+                  Market Position
+                </h3>
+                <div className="space-y-4 text-trust-navy">
+                  <p className="font-medium leading-relaxed">
+                    We have established relationships with customers who are already contracted with us, ensuring immediate market access for our copper ore production.
+                  </p>
+                  <p className="font-medium leading-relaxed">
+                    Our strategic location in Mbesa, Tanzania, provides access to abundant and highly valuable natural resources, positioning us for sustained operations and growth.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Investment Opportunity */}
+          {/* Investment & Impact Combined */}
+          <section>
+            <Card className="bg-gradient-to-br from-earth-gold/10 to-amber-50 border-none shadow-lg">
+              <CardHeader>
+                <CardTitle className="text-3xl text-trust-navy font-bold text-center mb-4">
+                  Investment Opportunity & Impact
+                </CardTitle>
+                <p className="text-xl text-earth-gold font-semibold text-center">
+                  "Changing lives for the better"
+                </p>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                  <div>
+                    <h3 className="text-xl font-bold text-trust-navy mb-4 flex items-center">
+                      <TrendingUp className="h-5 w-5 text-earth-gold mr-2" />
+                      Why Invest With Us
+                    </h3>
+                    <p className="text-trust-navy mb-4 leading-relaxed">
+                      This is an opportunity to unlock the potential of rural Mbesa's abundant copper resources, helping local communities realize the true value of their land through mechanized mining operations.
+                    </p>
+                    <p className="text-trust-navy leading-relaxed">
+                      Your investment delivers superior returns while creating meaningful impact through job creation, infrastructure development, and sustainable mining practices.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-trust-navy mb-4 flex items-center">
+                      <Users className="h-5 w-5 text-earth-gold mr-2" />
+                      Community Impact
+                    </h3>
+                    <div className="bg-white rounded-lg p-6 mb-4">
+                      <p className="text-3xl font-bold text-trust-navy mb-2 text-center">2.6X Multiplier Effect</p>
+                      <p className="text-trust-navy text-center">Each mining job creates 2.6X economic impact in the local community</p>
+                    </div>
+                    <p className="text-trust-navy leading-relaxed">
+                      Our investors enable sustainable community development through responsible mining operations that generate lasting economic benefits.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button 
+                    onClick={scrollToContact}
+                    className="bg-earth-gold text-trust-navy hover:bg-amber-500 font-bold px-8 py-3"
+                  >
+                    Explore Investment Options
+                  </Button>
+                  <Button 
+                    onClick={() => window.location.href = '/impact'}
+                    variant="outline"
+                    className="border-earth-gold text-earth-gold hover:bg-earth-gold hover:text-trust-navy font-bold px-8 py-3"
+                  >
+                    Learn More About Our Impact
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
+
+
+          {/* Partnership Story */}
+          <section className="bg-trust-navy text-white rounded-lg p-8 relative overflow-hidden">
+            <div className="absolute inset-0 opacity-10">
+              <img 
+                src="https://images.unsplash.com/photo-1655549136009-6aa6ff5de57e?fm=jpg&q=80&w=2000&ixlib=rb-4.1.0"
+                alt="Mining operations"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="relative z-10">
+              <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
+                {/* Header Section - Always Visible */}
+                <div className="bg-gradient-to-r from-trust-navy to-trust-navy-800 text-white p-12">
+                  <div className="max-w-4xl mx-auto text-center">
+                    <div className="inline-flex items-center bg-earth-gold text-trust-navy px-6 py-3 rounded-full font-bold text-sm mb-6 shadow-lg">
+                      <Building className="h-4 w-4 mr-2" />
+                      Partnership Genesis
+                    </div>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                      From Trial to Transformation
+                    </h2>
+                    <p className="text-xl text-gray-200 leading-relaxed mb-8">
+                      The authentic story of how a 26-tonne trial shipment evolved into a strategic partnership that's redefining African mining operations and global market access.
+                    </p>
+                  </div>
+                </div>
+
+                <Collapsible>
+                  <CollapsibleTrigger className="w-full p-8 text-left hover:bg-earth-gold/5 transition-all duration-300 group border border-earth-gold/30 hover:border-earth-gold/60 rounded-xl bg-gradient-to-r from-white to-earth-gold/5 hover:shadow-lg">
+                    <div className="flex items-start justify-between">
+                      <div className="flex-1 pr-6">
+                        <div className="flex items-center mb-4">
+                          <Badge className="bg-earth-gold text-trust-navy font-bold px-4 py-2 mr-3">
+                            Our Authentic Story
+                          </Badge>
+                          <div className="flex items-center text-lg text-earth-gold font-bold bg-earth-gold/10 px-4 py-2 rounded-full hover:bg-earth-gold/20 transition-colors">
+                            <span>Click to expand full story</span>
+                            <ChevronDown className="h-5 w-5 ml-2 transition-transform duration-300 group-data-[state=open]:rotate-180" />
+                          </div>
+                        </div>
+                        <h2 className="text-3xl md:text-4xl font-bold text-trust-navy mb-4">
+                          From Trial to Transformation: Building Africa's Mining Future
+                        </h2>
+                        <p className="text-xl text-trust-navy/80 leading-relaxed">
+                          In 2022, what began as a single container shipment has evolved into a strategic partnership that's redefining how African mining operations access global markets.
+                        </p>
+                      </div>
+                      <div className="flex-shrink-0 bg-earth-gold/10 rounded-full p-3 group-hover:bg-earth-gold/20 transition-colors">
+                        <ChevronDown className="h-8 w-8 text-earth-gold transition-transform duration-300 group-data-[state=open]:rotate-180" />
+                      </div>
+                    </div>
+                  </CollapsibleTrigger>
+                
+                <CollapsibleContent className="px-8 pb-8">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <div className="space-y-8">
+                      <div>
+                        <h3 className="text-2xl font-bold text-trust-navy mb-4 flex items-center">
+                          <Target className="h-6 w-6 text-earth-gold mr-2" />
+                          The Beginning: A Test of Character
+                        </h3>
+                        <p className="text-trust-navy leading-relaxed mb-4">
+                          Through mutual adviser Asamoah Mfoafo, our founding team—Daniel Smith, Carsue Curniffe, and Solomon Amos—were introduced to Afro Shamans Company Ltd. Our first collaboration was ambitious: deliver 26 tonnes of copper to Chinese buyers as a trial to prove operational capability.
+                        </p>
+                        <p className="text-trust-navy leading-relaxed">
+                          The trial succeeded, but not without revealing brutal realities: ten days waiting at port, shipping complications, unexpected costs. Many would have walked away. <span className="font-semibold text-earth-gold">We saw opportunity.</span>
+                        </p>
+                      </div>
+
+                      <div>
+                        <h3 className="text-2xl font-bold text-trust-navy mb-4 flex items-center">
+                          <DollarSign className="h-6 w-6 text-earth-gold mr-2" />
+                          The $6,450 Revelation
+                        </h3>
+                        <p className="text-trust-navy leading-relaxed mb-4">
+                          Our most valuable lesson: <span className="font-bold text-earth-gold">$6,450 per day for excavator rental.</span> After 21 days, miners could have owned the equipment with 50% down and 6-12 month financing.
+                        </p>
+                        <p className="text-trust-navy leading-relaxed">
+                          <span className="font-semibold text-earth-gold">The transformational insight:</span> UK companies achieve significantly better equipment pricing and financing than Tanzanian companies. This disparity systematically prevents an entire continent from scaling.
+                        </p>
+                      </div>
+
+                      <div>
+                        <h3 className="text-2xl font-bold text-trust-navy mb-4 flex items-center">
+                          <TrendingUp className="h-6 w-6 text-earth-gold mr-2" />
+                          Strategic Advantage
+                        </h3>
+                        <p className="text-trust-navy leading-relaxed">
+                          Our UK incorporation provides strategic arbitrage: international banking standards, superior equipment pricing, and global supply chain access unavailable to African operations. We've developed comprehensive business intelligence systems with cost-per-ton calculations and built-in contingencies.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-8">
+                      <div className="relative">
+                        <div className="w-full h-64 bg-gradient-to-br from-earth-gold/20 to-amber-100 rounded-lg shadow-xl overflow-hidden">
+                          <img 
+                            src="@assets/WhatsApp Image 2025-08-18 at 01.03.01 (1)_1755477045758.jpeg" 
+                            alt="Strategic partnership development in Tanzania" 
+                            className="w-full h-full object-cover"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-trust-navy/60 to-transparent"></div>
+                          <div className="absolute bottom-4 left-4 bg-earth-gold/95 text-trust-navy px-4 py-2 rounded font-semibold shadow-lg">
+                            Building Africa's Mining Future
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-earth-gold/10 rounded-lg p-6">
+                        <h3 className="text-xl font-bold text-trust-navy mb-4 flex items-center">
+                          <Globe className="h-5 w-5 text-earth-gold mr-2" />
+                          The Scale of Opportunity
+                        </h3>
+                        <div className="space-y-3 text-trust-navy">
+                          <p className="flex items-center">
+                            <ArrowRight className="h-4 w-4 text-earth-gold mr-2 flex-shrink-0" />
+                            <span><strong>50+ mine sites</strong> across 1,000+ acres</span>
+                          </p>
+                          <p className="flex items-center">
+                            <ArrowRight className="h-4 w-4 text-earth-gold mr-2 flex-shrink-0" />
+                            <span><strong>1.5 million</strong> artisanal miners in Tanzania</span>
+                          </p>
+                          <p className="flex items-center">
+                            <ArrowRight className="h-4 w-4 text-earth-gold mr-2 flex-shrink-0" />
+                            <span><strong>Proven reserves:</strong> copper, nickel, lithium, beryllium, graphite, gold, silver</span>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="bg-trust-navy/5 rounded-lg p-6">
+                        <h3 className="text-xl font-bold text-trust-navy mb-4">Why Strategic Investors Choose Us</h3>
+                        <div className="grid grid-cols-2 gap-4 text-sm">
+                          <div>
+                            <div className="font-semibold text-earth-gold">Proven Performance</div>
+                            <div className="text-trust-navy">Real operational challenges delivered</div>
+                          </div>
+                          <div>
+                            <div className="font-semibold text-earth-gold">Market Intelligence</div>
+                            <div className="text-trust-navy">2+ years of research & modeling</div>
+                          </div>
+                          <div>
+                            <div className="font-semibold text-earth-gold">Strategic Positioning</div>
+                            <div className="text-trust-navy">UK advantages create operational moats</div>
+                          </div>
+                          <div>
+                            <div className="font-semibold text-earth-gold">Scalable Model</div>
+                            <div className="text-trust-navy">Replicable framework proven</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-8 text-center">
+                    <p className="text-xl text-trust-navy font-semibold bg-earth-gold/10 rounded-lg p-6">
+                      "This is more than a business story—it's proof that the right partnership can overcome systemic barriers and create transformational change across an entire continent."
+                    </p>
+                  </div>
+                </CollapsibleContent>
+                </Collapsible>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+                      <div className="bg-gradient-to-br from-earth-gold/10 to-amber-50 rounded-xl p-8 border border-earth-gold/20">
+                        <h3 className="text-2xl font-bold text-trust-navy mb-6 flex items-center">
+                          <Globe className="h-6 w-6 text-earth-gold mr-3" />
+                          Scale of Opportunity
+                        </h3>
+                        <div className="space-y-4">
+                          <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
+                            <span className="font-semibold text-trust-navy">Mine Sites</span>
+                            <span className="text-2xl font-bold text-earth-gold">50+</span>
+                          </div>
+                          <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
+                            <span className="font-semibold text-trust-navy">Total Acreage</span>
+                            <span className="text-2xl font-bold text-earth-gold">1,000+</span>
+                          </div>
+                          <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
+                            <span className="font-semibold text-trust-navy">Artisanal Miners in Tanzania</span>
+                            <span className="text-2xl font-bold text-earth-gold">1.5M</span>
+                          </div>
+                          <div className="p-4 bg-white rounded-lg shadow-sm">
+                            <div className="font-semibold text-trust-navy mb-2">Proven Reserves</div>
+                            <div className="text-sm text-trust-navy/80">Copper, nickel, lithium, beryllium, graphite, gold, silver</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-gradient-to-br from-trust-navy/5 to-blue-50 rounded-xl p-8 border border-trust-navy/20">
+                        <h3 className="text-2xl font-bold text-trust-navy mb-6">Strategic Investment Advantages</h3>
+                        <div className="space-y-4">
+                          <div className="border-l-4 border-earth-gold pl-4">
+                            <div className="font-bold text-earth-gold">Proven Performance</div>
+                            <div className="text-trust-navy text-sm">Successfully navigated real operational challenges</div>
+                          </div>
+                          <div className="border-l-4 border-earth-gold pl-4">
+                            <div className="font-bold text-earth-gold">Market Intelligence</div>
+                            <div className="text-trust-navy text-sm">2+ years of comprehensive research & financial modeling</div>
+                          </div>
+                          <div className="border-l-4 border-earth-gold pl-4">
+                            <div className="font-bold text-earth-gold">Strategic Positioning</div>
+                            <div className="text-trust-navy text-sm">UK advantages create sustainable operational moats</div>
+                          </div>
+                          <div className="border-l-4 border-earth-gold pl-4">
+                            <div className="font-bold text-earth-gold">Scalable Framework</div>
+                            <div className="text-trust-navy text-sm">Replicable model proven across multiple operations</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Closing Statement */}
+                  <div className="mt-12 text-center">
+                    <div className="bg-gradient-to-r from-trust-navy to-trust-navy-800 text-white rounded-2xl p-10 shadow-xl">
+                      <div className="max-w-3xl mx-auto">
+                        <div className="text-3xl font-bold mb-4 text-earth-gold">"Building Africa's Mining Future"</div>
+                        <p className="text-xl leading-relaxed text-gray-200">
+                          This is more than a business story—it's proof that the right partnership can overcome systemic barriers and create transformational change across an entire continent.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </CollapsibleContent>
+              </Collapsible>
+              </div>
+            </div>
+          </section>
+
+          {/* Video Introduction - Prominently Placed */}
+          <section className="py-20 bg-gradient-to-br from-earth-gold/10 to-amber-50 rounded-xl shadow-lg">
+            <div className="container mx-auto px-4">
+              <div className="max-w-6xl mx-auto">
+                <div className="text-center mb-12">
+                  <span className="inline-block bg-earth-gold text-trust-navy px-4 py-2 rounded-full font-bold text-sm mb-4">
+                    See Real Operations
+                  </span>
+                  <h2 className="text-4xl md:text-5xl font-bold text-trust-navy mb-6">
+                    Meet Afro Shamans - Our Mining Partners
+                  </h2>
+                  <p className="text-xl text-trust-navy max-w-4xl mx-auto leading-relaxed">
+                    This introduction to Afro Shamans gives investors confidence that the mine exists with real people operating authentic mining operations in Mbesa, Tanzania.
+                  </p>
+                </div>
+                
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  <div className="order-2 lg:order-1">
+                    <div className="bg-white rounded-xl p-8 shadow-lg">
+                      <h3 className="text-2xl font-bold text-trust-navy mb-6">Why This Video Matters</h3>
+                      <div className="space-y-4">
+                        <div className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-earth-gold rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-trust-navy">Authentic proof of existing mining operations</p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-earth-gold rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-trust-navy">Real people and community partnerships</p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-earth-gold rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-trust-navy">Transparent view of current mining methods</p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-earth-gold rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-trust-navy">Foundation for scaling with your investment</p>
+                        </div>
+                      </div>
+                      
+                      <div className="mt-8">
+                        <a href="https://youtube.com/@madini-moyoni" target="_blank" rel="noopener noreferrer"
+                           className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg transition-all font-semibold">
+                          <Youtube className="h-5 w-5" />
+                          <span>Subscribe to Our Channel</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="order-1 lg:order-2">
+                    <div className="relative">
+                      <div className="relative w-full rounded-xl overflow-hidden shadow-2xl" style={{ paddingBottom: '56.25%' }}>
+                        <iframe
+                          className="absolute top-0 left-0 w-full h-full"
+                          src="https://www.youtube.com/embed/CTn3kkD128w"
+                          title="Madini Moyoni Company Introduction"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        ></iframe>
+                      </div>
+                      <div className="absolute -bottom-4 -right-4 bg-earth-gold text-trust-navy px-4 py-2 rounded-lg font-bold shadow-lg">
+                        Live Operations Footage
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-12 text-center">
+                  <p className="text-lg text-trust-navy max-w-3xl mx-auto">
+                    See the real mining operations and community that your investment will support. This authentic footage demonstrates our established partnerships and operational readiness.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Our Bold Vision */}
+          <section className="bg-trust-navy text-white rounded-lg p-8 relative overflow-hidden">
+            <div className="absolute inset-0 opacity-10">
+              <img 
+                src="https://images.unsplash.com/photo-1626710214966-a95bc038cf85?fm=jpg&q=80&w=1000&ixlib=rb-4.1.0"
+                alt="Mining landscape and operations"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="relative z-10 text-center">
+              <h2 className="text-4xl font-bold mb-8">Our Bold Vision</h2>
+              <div className="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed">
+                <p className="text-earth-gold font-semibold text-xl">
+                  Creating a paradigm shift where Africa finally reaps the benefits of refining its own materials - copper cathodes and bars rather than just ores.
+                </p>
+                <p>
+                  We will apply modern techniques and business models that can be replicated across the region, the country and the continent. We will operate as a beacon of responsibility, professionalism and fairness, in what is usually an exploitative, unprofessional and unsafe working environment.
+                </p>
+              </div>
+            </div>
+          </section>
+
+
+
+        </div>
+      </div>
+    </div>
+  );
+}
