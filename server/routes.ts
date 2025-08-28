@@ -55,7 +55,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         try {
           await sgMail.send(msg);
           console.log('Email sent successfully to info@madinimoyoni.co.uk');
-        } catch (emailError) {
+        } catch (emailError: any) {
           console.error('SendGrid email error:', emailError);
           if (emailError.response && emailError.response.body) {
             console.error('SendGrid error details:', JSON.stringify(emailError.response.body, null, 2));
