@@ -20,8 +20,8 @@ export default function NextSteps() {
     },
     {
       icon: Calendar,
-      title: "SEIS Tax Relief Calculator",
-      description: "Interactive tool to estimate your tax relief benefits",
+      title: "Investment Calculator",
+      description: "Interactive tool to explore investment tiers and benefits",
       action: "Calculate Relief"
     },
     {
@@ -33,7 +33,7 @@ export default function NextSteps() {
     {
       icon: CheckCircle,
       title: "Investment Proposals",
-      description: "Strategic and SEIS investment opportunities available",
+      description: "Strategic investment opportunities from $5K to $2M available",
       action: "Explore Options"
     }
   ];
@@ -72,7 +72,7 @@ export default function NextSteps() {
           <div className="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-earth-gold mb-4">Access Investment Information</h3>
             <p className="text-gray-600 mb-6">
-              Review our investment proposals and explore opportunities for strategic and SEIS investments.
+              Review our investment proposals and explore opportunities for strategic equity partnerships.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -82,11 +82,11 @@ export default function NextSteps() {
                 Investment Inquiry
               </Button>
               <Button 
-                onClick={() => scrollToSection("seis")}
+                onClick={() => scrollToSection("investment-tiers")}
                 variant="outline" 
                 className="border-earth-gold text-earth-gold hover:bg-earth-gold hover:text-trust-navy font-bold py-3 px-8 text-lg"
               >
-                SEIS Calculator
+                View Tiers
               </Button>
             </div>
           </div>

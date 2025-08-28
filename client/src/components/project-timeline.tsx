@@ -45,7 +45,7 @@ export default function ProjectTimeline() {
         "Direct equity participation pathways",
         "Board representation and governance rights",
         "US strategic raise through established partners",
-        "UK SEIS investment opportunities"
+        "Strategic equity investment opportunities"
       ]
     }
   ];

@@ -61,6 +61,55 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Enhanced Madini Moyoni Brand Colors
+        "trust-navy": {
+          DEFAULT: "#1e3a8a",
+          50: "#eff6ff",
+          100: "#dbeafe", 
+          200: "#bfdbfe",
+          300: "#93c5fd",
+          400: "#60a5fa",
+          500: "#3b82f6",
+          600: "#2563eb",
+          700: "#1d4ed8",
+          800: "#1e40af",
+          900: "#1e3a8a",
+          950: "#172554"
+        },
+        "earth-gold": {
+          DEFAULT: "#f59e0b",
+          50: "#fffbeb",
+          100: "#fef3c7",
+          200: "#fde68a",
+          300: "#fcd34d",
+          400: "#fbbf24",
+          500: "#f59e0b",
+          600: "#d97706",
+          700: "#b45309",
+          800: "#92400e",
+          900: "#78350f",
+          950: "#451a03"
+        },
+        "copper": "#b45309",
+        "forest-green": "#16a34a",
+        "success-green": "#22c55e",
+        "neutral-gray": "#f8fafc",
+        "premium-gold": "#d97706"
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      spacing: {
+        '18': '4.5rem',
+        '88': '22rem',
+        '128': '32rem',
+      },
+      boxShadow: {
+        'premium': '0 8px 30px rgb(0 0 0 / 0.06)',
+        'premium-lg': '0 16px 40px rgb(0 0 0 / 0.1)',
+        'premium-xl': '0 25px 50px rgb(0 0 0 / 0.15)',
+        'premium-dark': '0 8px 30px rgb(0 0 0 / 0.3)',
+        'premium-glow': '0 0 20px rgb(245 158 11 / 0.3)',
       },
       keyframes: {
         "accordion-down": {
