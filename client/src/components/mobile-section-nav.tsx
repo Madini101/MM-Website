@@ -11,7 +11,7 @@ export default function MobileSectionNav() {
     { id: "mining-site", label: "Operations", icon: Building2 },
     { id: "investment", label: "Investment", icon: TrendingUp },
     { id: "social-impact", label: "Impact", icon: Heart },
-    { id: "seis-calculator", label: "Calculator", icon: Calculator },
+    { id: "investment-tiers", label: "Tiers", icon: Calculator },
     { id: "financials", label: "Financials", icon: BarChart3 },
     { id: "team", label: "Team", icon: Users },
     { id: "faq", label: "FAQ", icon: HelpCircle },
@@ -62,16 +62,16 @@ export default function MobileSectionNav() {
         {/* Up Arrow */}
         <button
           onClick={() => navigateSection('up')}
-          className="w-10 h-10 bg-trust-navy/90 text-white rounded-full shadow-lg flex items-center justify-center hover:bg-trust-navy transition-all duration-200 border border-earth-gold/50"
+          className="w-12 h-12 bg-gradient-to-br from-trust-navy via-trust-navy-800 to-trust-navy-900 text-white rounded-full shadow-2xl flex items-center justify-center hover:shadow-earth-gold/50 hover:shadow-2xl transition-all duration-300 border-2 border-earth-gold/60 hover:border-earth-gold transform hover:scale-110 backdrop-blur-sm"
           aria-label="Previous section"
         >
-          <ChevronUp className="h-5 w-5" />
+          <ChevronUp className="h-5 w-5 drop-shadow-lg" />
         </button>
 
         {/* Current Section Indicator */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-10 h-10 bg-earth-gold text-trust-navy rounded-full shadow-lg flex items-center justify-center hover:bg-earth-gold/90 transition-all duration-200 font-bold text-xs"
+          className="w-12 h-12 bg-gradient-to-br from-earth-gold via-yellow-500 to-earth-gold text-trust-navy rounded-full shadow-2xl flex items-center justify-center hover:shadow-trust-navy/30 hover:shadow-2xl transition-all duration-300 font-bold text-sm border-2 border-trust-navy/20 transform hover:scale-110 hover:-translate-y-1"
           aria-label="Section menu"
         >
           {currentSection + 1}
@@ -80,7 +80,7 @@ export default function MobileSectionNav() {
         {/* Down Arrow */}
         <button
           onClick={() => navigateSection('down')}
-          className="w-10 h-10 bg-trust-navy/90 text-white rounded-full shadow-lg flex items-center justify-center hover:bg-trust-navy transition-all duration-200 border border-earth-gold/50"
+          className="w-12 h-12 bg-gradient-to-br from-trust-navy via-trust-navy-800 to-trust-navy-900 text-white rounded-full shadow-2xl flex items-center justify-center hover:shadow-earth-gold/50 hover:shadow-2xl transition-all duration-300 border-2 border-earth-gold/60 hover:border-earth-gold transform hover:scale-110 backdrop-blur-sm"
           aria-label="Next section"
         >
           <ChevronDown className="h-5 w-5" />
@@ -89,7 +89,7 @@ export default function MobileSectionNav() {
 
       {/* Section Menu */}
       {isOpen && (
-        <div className="absolute left-12 top-0 bg-white/95 backdrop-blur-md border border-earth-gold rounded-lg shadow-xl p-2 w-40">
+        <div className="absolute left-14 top-0 bg-white/98 backdrop-blur-xl border-2 border-earth-gold/70 rounded-2xl shadow-2xl shadow-trust-navy/20 p-3 w-44 ring-1 ring-earth-gold/30">
           <div className="space-y-1 max-h-80 overflow-y-auto">
             {sections.map((section, index) => {
               const Icon = section.icon;
@@ -97,10 +97,10 @@ export default function MobileSectionNav() {
                 <button
                   key={section.id}
                   onClick={() => scrollToSection(section.id, index)}
-                  className={`w-full flex items-center space-x-2 p-2 rounded text-sm transition-all duration-200 ${
+                  className={`w-full flex items-center space-x-3 p-3 rounded-xl text-sm transition-all duration-300 ${
                     currentSection === index
-                      ? 'bg-earth-gold text-trust-navy font-bold'
-                      : 'text-trust-navy hover:bg-earth-gold/20'
+                      ? 'bg-gradient-to-r from-earth-gold to-yellow-500 text-trust-navy font-bold shadow-lg transform scale-105'
+                      : 'text-trust-navy hover:bg-gradient-to-r hover:from-earth-gold/20 hover:to-yellow-500/20 hover:shadow-md hover:transform hover:scale-102'
                   }`}
                 >
                   <Icon className="h-4 w-4" />

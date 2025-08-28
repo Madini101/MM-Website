@@ -38,7 +38,7 @@ export default function Navigation() {
     { id: "mining-site", label: "Operations" },
     { id: "investment", label: "Investment" },
     { id: "social-impact", label: "Impact" },
-    { id: "seis-calculator", label: "Calculator" },
+    { id: "investment-tiers", label: "Tiers" },
     { id: "financials", label: "Financials" },
     { id: "team", label: "Team" },
     { id: "faq", label: "FAQ" },
@@ -56,14 +56,17 @@ export default function Navigation() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
+          <div className="flex items-center justify-between h-24">
+            {/* Logo - Much More Prominent */}
             <button
               onClick={() => scrollToSection("hero")}
-              className="flex items-center space-x-3 font-bold text-lg hover:text-earth-gold transition-colors"
+              className="flex items-center space-x-4 font-bold text-xl hover:text-earth-gold transition-colors"
             >
-              <Logo size="md" />
-              <span className={isScrolled ? "text-trust-navy" : "text-white"}>Madini Moyoni</span>
+              <Logo size="2xl" />
+              <div className="flex flex-col">
+                <span className={`text-2xl font-bold ${isScrolled ? "text-trust-navy" : "text-white"}`}>Madini Moyoni</span>
+                <span className={`text-sm ${isScrolled ? "text-gray-600" : "text-white/80"}`}>Strategic Mining Investment</span>
+              </div>
             </button>
 
             {/* Desktop Navigation */}
@@ -99,9 +102,12 @@ export default function Navigation() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[280px] bg-white">
                 <div className="flex flex-col space-y-4 mt-8">
-                  <div className="flex items-center space-x-3 mb-6">
-                    <Logo size="md" />
-                    <span className="font-bold text-lg text-trust-navy">Madini Moyoni</span>
+                  <div className="flex items-center space-x-4 mb-6">
+                    <Logo size="xl" />
+                    <div className="flex flex-col">
+                      <span className="font-bold text-xl text-trust-navy">Madini Moyoni</span>
+                      <span className="text-sm text-gray-600">Strategic Mining Investment</span>
+                    </div>
                   </div>
                   {navItems.map((item) => (
                     <Button

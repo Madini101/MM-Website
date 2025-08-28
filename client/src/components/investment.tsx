@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { CheckCircle, TrendingUp, Globe, Clock, Users, DollarSign, Award, Zap } from "lucide-react";
+import { CheckCircle, TrendingUp, Globe, Clock, Users, DollarSign, Award, Zap, Target, Check, Phone } from "lucide-react";
 
 export default function Investment() {
   const scrollToSection = (sectionId: string) => {
@@ -14,7 +14,7 @@ export default function Investment() {
     {
       icon: TrendingUp,
       title: "Rising Copper Demand",
-      stat: "$9,500/tonne",
+      stat: "$9,600/tonne",
       description: "Global copper demand outstripping supply, driven by renewable energy transition",
       trend: "Growing market opportunity"
     },
@@ -43,30 +43,30 @@ export default function Investment() {
 
   const investmentPaths = [
     {
-      type: "SEIS Individual",
-      range: "£5,000 - £200,000",
-      highlight: "50% Tax Relief",
+      type: "Equity Partnership",
+      range: "£5,000 - £2,000,000",
+      highlight: "20% Equity Share + 20% Profit Dividends",
       benefits: [
-        "Immediate 50% HMRC tax relief",
-        "No Capital Gains Tax on disposal after 3 years",
-        "Loss relief and inheritance tax benefits",
-        "Part of £250K SEIS assured allocation"
+        "20% equity share ownership in mining operations",
+        "20% profit dividends (8% GP) per annum",
+        "5+ year investment horizon with 9.9x return target (Equity Only)",
+        "64% annual IRR target over investment period"
       ],
-      benefit: "SEIS benefits maximize returns",
-      action: "Calculate Tax Benefits",
+      benefit: "Direct ownership starting from £5,000",
+      action: "View Investment Details",
       color: "copper"
     },
     {
       type: "Strategic Partnership",
-      range: "£100,000+",
-      highlight: "Direct Equity",
+      range: "£250,000+",
+      highlight: "Enhanced Benefits Package",
       benefits: [
-        "Direct equity participation in mining operations",
-        "Board representation and governance rights",
-        "Enhanced profit sharing arrangements",
+        "All equity partnership benefits plus VIP treatment",
+        "Enhanced investor engagement opportunities",
+        "Board observer roles and strategic input",
         "First access to expansion opportunities"
       ],
-      benefit: "Concurrent with US strategic raise",
+      benefit: "Premium investor experience with impact",
       action: "Contact for Tailored Approach",
       color: "forest-green"
     }
@@ -87,7 +87,7 @@ export default function Investment() {
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4">
               <TrendingUp className="h-5 w-5 sm:h-6 sm:w-6 text-trust-navy" />
               <span className="text-base sm:text-lg font-semibold text-trust-navy text-center">
-                $5M Total Raise • £250K SEIS Assured
+                $2M Strategic Investment Opportunity
               </span>
               <TrendingUp className="h-5 w-5 sm:h-6 sm:w-6 text-trust-navy hidden sm:block" />
             </div>
@@ -138,50 +138,50 @@ export default function Investment() {
             <div className="bg-gradient-to-br from-blue-50 to-trust-navy/5 border-2 border-trust-navy/30 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-4 sm:p-6 lg:p-8 group hover:border-trust-navy/60 w-full overflow-hidden">
               <div className="text-center mb-6 sm:mb-8">
                 <div className="bg-trust-navy w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-earth-gold font-bold text-xl">£</span>
+                  <span className="text-earth-gold font-bold text-xl">$</span>
                 </div>
-                <h4 className="text-xl sm:text-2xl font-bold text-trust-navy mb-3 group-hover:text-earth-gold transition-colors">SEIS Individual Investment</h4>
-                <div className="text-2xl sm:text-3xl font-bold text-trust-navy mb-3">£5,000 - £200,000</div>
-                <p className="text-sm sm:text-base text-gray-600 bg-earth-gold/10 px-4 py-2 rounded-full">UK tax-efficient investment pathway</p>
+                <h4 className="text-xl sm:text-2xl font-bold text-trust-navy mb-3 group-hover:text-earth-gold transition-colors">Equity Partnership</h4>
+                <div className="text-2xl sm:text-3xl font-bold text-trust-navy mb-3">$50,000 - $2,000,000</div>
+                <p className="text-sm sm:text-base text-gray-600 bg-earth-gold/10 px-4 py-2 rounded-full">Direct equity + dividend pathway</p>
               </div>
               
               <div className="space-y-4 mb-6 sm:mb-8">
                 <h5 className="font-bold text-trust-navy text-base sm:text-lg border-b border-earth-gold/30 pb-2">Key Benefits:</h5>
                 <ul className="space-y-3 text-sm sm:text-base text-gray-700">
                   <li className="flex items-start bg-earth-gold/5 p-3 rounded-lg">
-                    <span className="text-earth-gold mr-3 text-lg">✓</span>
-                    <span className="font-medium">50% immediate HMRC tax relief</span>
+                    <Check className="h-5 w-5 text-earth-gold mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="font-medium">20% equity share in mining operations</span>
                   </li>
                   <li className="flex items-start bg-earth-gold/5 p-3 rounded-lg">
-                    <span className="text-earth-gold mr-3 text-lg">✓</span>
-                    <span className="font-medium">No Capital Gains Tax after 3 years</span>
+                    <Check className="h-5 w-5 text-earth-gold mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="font-medium">20% profit dividends (8% GP) per annum</span>
                   </li>
                   <li className="flex items-start bg-earth-gold/5 p-3 rounded-lg">
-                    <span className="text-earth-gold mr-3 text-lg">✓</span>
-                    <span className="font-medium">Loss relief and inheritance tax benefits</span>
+                    <Check className="h-5 w-5 text-earth-gold mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="font-medium">5+ year investment horizon with 9.9x return target</span>
                   </li>
                   <li className="flex items-start bg-earth-gold/5 p-3 rounded-lg">
-                    <span className="text-earth-gold mr-3 text-lg">✓</span>
-                    <span className="font-medium">£250K SEIS assured allocation</span>
+                    <Check className="h-5 w-5 text-earth-gold mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="font-medium">64% annual IRR target over investment period</span>
                   </li>
                 </ul>
               </div>
 
               <div className="bg-gradient-to-r from-trust-navy/10 to-blue-100 border border-trust-navy/40 p-4 rounded-xl mb-6 shadow-inner">
-                <p className="text-sm font-bold text-trust-navy mb-1">Limited Time Allocation</p>
-                <p className="text-sm text-trust-navy">SEIS benefits maximize investment returns</p>
+                <p className="text-sm font-bold text-trust-navy mb-1">Direct Ownership Model</p>
+                <p className="text-sm text-trust-navy">Equity participation with dividend distributions</p>
               </div>
 
               <div className="relative mb-4">
                 <div className="absolute -inset-2 bg-gradient-to-r from-earth-gold via-yellow-400 to-earth-gold rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
                 <Button 
-                  onClick={() => scrollToSection("seis")}
+                  onClick={() => scrollToSection("investment-tiers")}
                   className="relative w-full bg-gradient-to-r from-trust-navy to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white border-6 border-earth-gold hover:border-yellow-400 py-8 sm:py-10 px-8 sm:px-12 rounded-3xl font-bold transition-all duration-300 shadow-2xl hover:shadow-3xl text-xl sm:text-2xl lg:text-3xl transform hover:scale-110 hover:-translate-y-2 overflow-hidden group ring-6 ring-earth-gold/50 hover:ring-yellow-400/70 min-h-[80px] sm:min-h-[100px]"
                 >
                   <span className="absolute inset-0 bg-gradient-to-r from-earth-gold/30 to-yellow-400/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   <span className="relative z-10 flex items-center justify-center font-extrabold tracking-wide">
-                    <span className="mr-4 text-3xl sm:text-4xl">💼</span>
-                    <span className="leading-tight">Calculate SEIS Benefits</span>
+                    <Target className="h-12 w-12 mr-4 text-earth-gold" />
+                    <span className="leading-tight">View Investment Details</span>
                     <span className="ml-4 text-2xl sm:text-3xl">→</span>
                   </span>
                 </Button>
@@ -191,50 +191,50 @@ export default function Investment() {
             <div className="bg-gradient-to-br from-blue-50 to-trust-navy/5 border-2 border-trust-navy/30 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-4 sm:p-6 lg:p-8 group hover:border-trust-navy/60 w-full overflow-hidden">
               <div className="text-center mb-6 sm:mb-8">
                 <div className="bg-trust-navy w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-earth-gold font-bold text-xl">£</span>
+                  <span className="text-earth-gold font-bold text-xl">$</span>
                 </div>
-                <h4 className="text-xl sm:text-2xl font-bold text-trust-navy mb-3 group-hover:text-earth-gold transition-colors">Strategic Investment</h4>
-                <div className="text-2xl sm:text-3xl font-bold text-trust-navy mb-3">£100,000+</div>
-                <p className="text-sm sm:text-base text-gray-600 bg-trust-navy/10 px-4 py-2 rounded-full">Direct equity participation pathway</p>
+                <h4 className="text-xl sm:text-2xl font-bold text-trust-navy mb-3 group-hover:text-earth-gold transition-colors">Strategic Partnership</h4>
+                <div className="text-2xl sm:text-3xl font-bold text-trust-navy mb-3">$250,000+</div>
+                <p className="text-sm sm:text-base text-gray-600 bg-trust-navy/10 px-4 py-2 rounded-full">Enhanced equity partnership pathway</p>
               </div>
               
               <div className="space-y-4 mb-6 sm:mb-8">
                 <h5 className="font-bold text-trust-navy text-base sm:text-lg border-b border-trust-navy/30 pb-2">Key Benefits:</h5>
                 <ul className="space-y-3 text-sm sm:text-base text-gray-700">
                   <li className="flex items-start bg-trust-navy/5 p-3 rounded-lg">
-                    <span className="text-trust-navy mr-3 text-lg">✓</span>
-                    <span className="font-medium">Direct equity in mining operations</span>
+                    <Check className="h-5 w-5 text-trust-navy mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="font-medium">All equity partnership benefits plus VIP treatment</span>
                   </li>
                   <li className="flex items-start bg-trust-navy/5 p-3 rounded-lg">
-                    <span className="text-trust-navy mr-3 text-lg">✓</span>
-                    <span className="font-medium">Board representation and governance</span>
+                    <Check className="h-5 w-5 text-trust-navy mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="font-medium">Enhanced investor engagement opportunities</span>
                   </li>
                   <li className="flex items-start bg-trust-navy/5 p-3 rounded-lg">
-                    <span className="text-trust-navy mr-3 text-lg">✓</span>
-                    <span className="font-medium">Enhanced profit sharing arrangements</span>
+                    <Check className="h-5 w-5 text-trust-navy mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="font-medium">Board observer roles and strategic input</span>
                   </li>
                   <li className="flex items-start bg-trust-navy/5 p-3 rounded-lg">
-                    <span className="text-trust-navy mr-3 text-lg">✓</span>
+                    <Check className="h-5 w-5 text-trust-navy mr-3 mt-0.5 flex-shrink-0" />
                     <span className="font-medium">First access to expansion opportunities</span>
                   </li>
                 </ul>
               </div>
 
               <div className="bg-gradient-to-r from-trust-navy/10 to-blue-100 border border-trust-navy/40 p-4 rounded-xl mb-6 shadow-inner">
-                <p className="text-sm font-bold text-trust-navy mb-1">Strategic Partnership</p>
-                <p className="text-sm text-trust-navy">Concurrent with US strategic raise</p>
+                <p className="text-sm font-bold text-trust-navy mb-1">Premium Investor Experience</p>
+                <p className="text-sm text-trust-navy">Enhanced benefits with impact focus</p>
               </div>
 
               <div className="relative mb-4">
                 <div className="absolute -inset-2 bg-gradient-to-r from-earth-gold via-yellow-400 to-earth-gold rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
                 <Button 
-                  onClick={() => scrollToSection("financials")}
+                  onClick={() => scrollToSection("contact")}
                   className="relative w-full bg-gradient-to-r from-emerald-700 to-forest-green hover:from-emerald-600 hover:to-green-700 text-white border-6 border-earth-gold hover:border-yellow-400 py-8 sm:py-10 px-8 sm:px-12 rounded-3xl font-bold transition-all duration-300 shadow-2xl hover:shadow-3xl text-xl sm:text-2xl lg:text-3xl transform hover:scale-110 hover:-translate-y-2 overflow-hidden group ring-6 ring-earth-gold/50 hover:ring-yellow-400/70 min-h-[80px] sm:min-h-[100px]"
                 >
                   <span className="absolute inset-0 bg-gradient-to-r from-earth-gold/30 to-yellow-400/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   <span className="relative z-10 flex items-center justify-center font-extrabold tracking-wide">
-                    <span className="mr-4 text-3xl sm:text-4xl">📊</span>
-                    <span className="leading-tight">Investment Returns & Exit Strategies</span>
+                    <Phone className="h-8 w-8 sm:h-10 sm:w-10 mr-4 text-earth-gold" />
+                    <span className="leading-tight">Contact for Tailored Approach</span>
                     <span className="ml-4 text-2xl sm:text-3xl">→</span>
                   </span>
                 </Button>
@@ -269,9 +269,9 @@ export default function Investment() {
               <div className="bg-earth-gold bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <DollarSign className="h-8 w-8 text-earth-gold" />
               </div>
-              <h4 className="text-lg font-bold text-trust-navy mb-3">Tax Efficiency</h4>
+              <h4 className="text-lg font-bold text-trust-navy mb-3">Investment Structure</h4>
               <p className="text-gray-600">
-                SEIS benefits provide 50% immediate tax relief, making this one of the most tax-efficient investments available.
+                Direct equity ownership with 20% profit dividends provides exceptional returns with transparent exit strategy.
               </p>
             </div>
           </div>
