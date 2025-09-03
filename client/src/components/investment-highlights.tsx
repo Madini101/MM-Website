@@ -29,53 +29,53 @@ export default function InvestmentHighlights() {
           </div>
         </div>
 
-        {/* SEIS Investment Details */}
+        {/* Investment Details */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-12 sm:mb-16 px-2 sm:px-0">
           <Card className="bg-trust-navy border-2 border-earth-gold shadow-xl">
             <CardContent className="p-4 sm:p-6 lg:p-8">
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-earth-gold mb-4 sm:mb-6">SEIS Investment Benefits</h3>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-earth-gold mb-4 sm:mb-6">Strategic Investment Benefits</h3>
               <div className="text-center mb-4 sm:mb-6">
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">£5,000 - £200,000</div>
-                <p className="text-sm sm:text-base text-gray-300 font-medium">Per Individual Investor</p>
-                <p className="text-xs text-gray-400 mt-1">Above £200,000: Contact for tailored approach</p>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">$5,000 - $2,000,000</div>
+                <p className="text-sm sm:text-base text-gray-300 font-medium">Strategic Investment Options</p>
+                <p className="text-xs text-gray-400 mt-1">Flexible increments available</p>
               </div>
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-earth-gold mt-0.5 flex-shrink-0" />
                   <div>
-                    <strong className="text-white">50% Immediate Tax Relief</strong>
-                    <p className="text-sm text-gray-300">HMRC approved - invest £50,000, get £25,000 back</p>
+                    <strong className="text-white">9.9x Target Return</strong>
+                    <p className="text-sm text-gray-300">64% IRR through 30% equity share or 3.9x with 20% equity + dividends (34% IRR)</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-earth-gold mt-0.5 flex-shrink-0" />
                   <div>
-                    <strong className="text-white">100% CGT Exemption</strong>
-                    <p className="text-sm text-gray-300">No capital gains tax on disposal after 3 years</p>
+                    <strong className="text-white">20% Equity Share + Dividends</strong>
+                    <p className="text-sm text-gray-300">20% equity ownership plus 20% profit dividends (8% GP annually)</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-earth-gold mt-0.5 flex-shrink-0" />
                   <div>
-                    <strong className="text-white">Loss Relief Protection</strong>
-                    <p className="text-sm text-gray-300">Offset losses against income tax if needed</p>
+                    <strong className="text-white">Tier-Based Benefits</strong>
+                    <p className="text-sm text-gray-300">Enhanced engagement experiences based on investment level</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-earth-gold mt-0.5 flex-shrink-0" />
                   <div>
-                    <strong className="text-white">Inheritance Tax Relief</strong>
-                    <p className="text-sm text-gray-300">Business property relief after two years</p>
+                    <strong className="text-white">Community Impact</strong>
+                    <p className="text-sm text-gray-300">Direct participation in transforming mining communities</p>
                   </div>
                 </div>
               </div>
 
               <Button
-                onClick={() => scrollToSection("seis")}
+                onClick={() => scrollToSection("investment-tiers")}
                 className="w-full mt-6 bg-earth-gold border-2 border-earth-gold text-trust-navy hover:bg-yellow-500 font-bold py-3 px-8 text-lg shadow-md"
               >
-                Calculate Your Tax Relief
+View Investment Tiers
               </Button>
             </CardContent>
           </Card>
@@ -90,23 +90,23 @@ export default function InvestmentHighlights() {
               
               <div className="bg-earth-gold p-4 rounded-lg mb-6 border border-earth-gold">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-trust-navy mb-1">£250k</div>
-                  <div className="text-sm text-trust-navy font-medium">UK SEIS Target Raise</div>
+                  <div className="text-3xl font-bold text-trust-navy mb-1">$2M</div>
+                  <div className="text-sm text-trust-navy font-medium">Total Investment Target</div>
                 </div>
               </div>
 
               <div className="space-y-4 text-gray-300 mb-6">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-earth-gold mt-1 flex-shrink-0" />
-                  <p><strong className="text-white">Concurrent US Strategic Raise:</strong> Handled by established partners</p>
+                  <p><strong className="text-white">Direct Equity Investment:</strong> Authentic ownership in mining operations</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-earth-gold mt-1 flex-shrink-0" />
-                  <p><strong className="text-white">June-July Activity:</strong> Strategic raise handled by Key Capital and GlobalCapitalista during these months</p>
+                  <p><strong className="text-white">Investment Target:</strong> $2M strategic equity across multiple investment tiers</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-earth-gold mt-1 flex-shrink-0" />
-                  <p><strong className="text-white">UK SEIS Opportunity:</strong> Chance for UK audience to take advantage of SEIS seed funding raise</p>
+                  <p><strong className="text-white">International Focus:</strong> UK, US, and Cayman Islands investor structure</p>
                 </div>
               </div>
 
@@ -151,7 +151,7 @@ export default function InvestmentHighlights() {
 
         {/* Call to Action */}
         <div className="text-center mt-12 bg-trust-navy border-2 border-earth-gold p-4 sm:p-6 lg:p-8 rounded-lg mx-2 sm:mx-0">
-          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-3 sm:mb-4 px-2">Ready to Secure Your UK SEIS Investment?</h3>
+          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-3 sm:mb-4 px-2">Ready to Secure Your Strategic Investment?</h3>
           <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 px-2">
             For investors keen on a transparent and sustainable approach with exceptional returns and social impact.
           </p>
@@ -159,7 +159,7 @@ export default function InvestmentHighlights() {
             onClick={() => scrollToSection("contact")}
             className="w-full sm:w-auto bg-earth-gold border-2 border-earth-gold text-trust-navy hover:bg-yellow-500 font-bold py-2 sm:py-3 px-4 sm:px-6 lg:px-8 text-sm sm:text-base lg:text-lg shadow-md"
           >
-            Secure Your UK SEIS Investment
+            Secure Your Strategic Investment
           </Button>
         </div>
       </div>
